@@ -3,7 +3,7 @@ package uk.ac.shu.webarch.eregister
 class Instructor {
 
     String name
-    String StaffNumber
+    String staffNumber
 
     static hasMany = [
       classes_taught_by_this_instructor:RegClass
