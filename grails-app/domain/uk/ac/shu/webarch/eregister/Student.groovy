@@ -10,17 +10,12 @@ class Student {
     Set classAtts
 
     static hasMany = [
-    courses: Enrollment,
-    classAtts: RegisterEntry
+    courses: Enroll,
+    classAtts: RegEntry
   ]
 
-  static mappedBy = [
+  static mapping = [
     courses:'student',
     classAtts:'student'
   ]
-
-  static constraints = {
-    fullStudentName(nullable:false, blank:false,maxSize:256);
-    studentNumber(nullable:false, blank:false,maxSize:256);
-  }
 }

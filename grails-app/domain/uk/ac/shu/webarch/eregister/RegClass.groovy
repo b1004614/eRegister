@@ -4,7 +4,7 @@ class RegClass {
 
     String name
     Instructor class_instructor
-    course course
+    Course course
 
     Set enrolledStudents
 
