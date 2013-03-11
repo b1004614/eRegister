@@ -1,4 +1,4 @@
-package uk.ac.shu.webarch.eRegister
+package uk.ac.shu.webarch.eregister
 
 class ClassesController {
 
