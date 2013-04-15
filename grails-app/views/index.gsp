@@ -9,8 +9,6 @@
 
 	<body>
 
-	<div id="container" style="width:960px">
-
 	<div id="header" style="background-color:#A80000;">
 	<h1 style="margin-bottom:0;"><b>Welcome to Shu Registration Application</b></h1></div>
 
@@ -28,7 +26,7 @@
 	Welcome</div>
 
 	<div id="footer" style="background-color:#A80000;clear:both;text-align:left<b>r;">
-	Copyright © Rob Wallace 2013</div>
+	Copyright © Rob Wallace 2013</div
 
 </div>
 

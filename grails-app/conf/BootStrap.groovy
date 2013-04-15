@@ -12,6 +12,7 @@ class BootStrap {
       def web_arch_course = Course.findByCourseCode('352611a') ?: new Course(courseCode:'352611a',
 						               courseName:'Web Architectures', 
                                                                courseDescription: 'Headache for students').save()
+
     }
 
     def destroy = {

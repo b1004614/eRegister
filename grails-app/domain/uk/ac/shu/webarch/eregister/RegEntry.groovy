@@ -4,7 +4,7 @@ class RegEntry {
 
   Student student
 
-  Long timestamp
+  Long timestamp = System.currentTimeMillis()
 
     static constraints = {
       timestamp(nullable:false, black:false);

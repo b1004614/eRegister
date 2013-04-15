@@ -34,9 +34,9 @@
 				<g:each in="${regEntryInstanceList}" status="i" var="regEntryInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${regEntryInstance.id}">${fieldValue(bean: regEntryInstance, field: "timestamp")}</g:link></td>
-					
-						<td>${fieldValue(bean: regEntryInstance, field: "student")}</td>
+						<td><g:link action="show" id="${regEntryInstance.id}">${new Date(regEntryInstance.timestamp)}</g:link></td>
+				
+						<td>${regEntryInstance.student?.name}</td>
 					
 					</tr>
 				</g:each>

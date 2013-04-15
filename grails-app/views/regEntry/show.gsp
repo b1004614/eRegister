@@ -27,7 +27,8 @@
 				<li class="fieldcontain">
 					<span id="timestamp-label" class="property-label"><g:message code="regEntry.timestamp.label" default="Timestamp" /></span>
 					
-						<span class="property-value" aria-labelledby="timestamp-label"><g:fieldValue bean="${regEntryInstance}" field="timestamp"/></span>
+						<span class="property-value" aria-labelledby="timestamp-label">
+               <g:link action="show" id="${regEntryInstance.id}">${new Date(regEntryInstance.timestamp)}</g:link></span>
 					
 				</li>
 				</g:if>
@@ -36,7 +37,7 @@
 				<li class="fieldcontain">
 					<span id="student-label" class="property-label"><g:message code="regEntry.student.label" default="Student" /></span>
 					
-						<span class="property-value" aria-labelledby="student-label"><g:link controller="student" action="show" id="${regEntryInstance?.student?.id}">${regEntryInstance?.student?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="student-label"><g:link controller="student" action="show" id="${regEntryInstance?.student?.id}">${regEntryInstance?.student?.name}</g:link></span>
 					
 				</li>
 				</g:if>
