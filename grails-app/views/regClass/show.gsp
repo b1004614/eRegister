@@ -27,7 +27,7 @@
 				<li class="fieldcontain">
 					<span id="class_instructor-label" class="property-label"><g:message code="regClass.class_instructor.label" default="Classinstructor" /></span>
 					
-						<span class="property-value" aria-labelledby="class_instructor-label"><g:link controller="instructor" action="show" id="${regClassInstance?.class_instructor?.id}">${regClassInstance?.class_instructor?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="class_instructor-label"><g:link controller="instructor" action="show" id="${regClassInstance?.class_instructor?.id}">${regClassInstance?.class_instructor?.name}</g:link></span>
 					
 				</li>
 				</g:if>
@@ -36,7 +36,7 @@
 				<li class="fieldcontain">
 					<span id="course-label" class="property-label"><g:message code="regClass.course.label" default="Course" /></span>
 					
-						<span class="property-value" aria-labelledby="course-label"><g:link controller="course" action="show" id="${regClassInstance?.course?.id}">${regClassInstance?.course?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="course-label"><g:link controller="course" action="show" id="${regClassInstance?.course?.id}">${regClassInstance?.course?.courseName}</g:link></span>
 					
 				</li>
 				</g:if>
