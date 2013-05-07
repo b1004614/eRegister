@@ -3,14 +3,10 @@ eRegister
 
 An electronic attendance register
 
-Your project README in githubshould have sufficient information to allow the assessor (And anyone else interested) to clone, build and run your project on a standard debian system similar to the class instance.
-You may wish to offer additional information in your readme (Screenshots of features etc). Use it as a portfolio piece and show off/highlight anything you're proud of and want to be sure it's seen.
-
-
-How to clone?
+HOW TO CLONE?
     Research on google
 
-How to build?  
+HOW TO BUILD?  
 
     Building an attendance system through github and grails can be quite tricky, but if you follow these steps, then i'm that you will be able to complete this.
     First of all you need to make sure that you have an empty vmware workstation,  you need to install grails onto the workstation "Grails version 2.2.2" then you need to create a new directory called eRegister.
