@@ -65,18 +65,33 @@ How to build?
     
     
     
-    Create new grails application on vmware
-    Create new github account if needed, if not create new repository
-    Create new domain classes using code .......
-    Edit relationships
-    Create scafolding
-    Create bootstrap
-    
-    git commit, git push, git status (talk about) used for each task to update github account.
-    developing branches (talk about) every week branches have been developed to show what has beenc reated/updated.
-    
-How to run?
-    Talk about how to open (grails run-app)
-    Talk about user interface (different pages)
-    Show how to create in different pages.
-    Talk about the bootstrap names that have been used.
+HOW TO RUN?
+    I will now talk about how to run my programme under certain sub headings to make it easier.
+
+    TALK ABOUT HOW TO OPEN 
+        This is the first heading. Once i had completed a certain section of the assignment, i would git commit and git push, to update the network map on github.
+        I would then go onto the terminal window, and type in grails run-app. This would then take me to my applcation, where you can view each page (which will be discussed later).
+        
+    TALK ABOUT USER INTERFACE AND THE DIFFERENT PAGES
+        The main page is the homepage, and shows the links to each of the sheets that i have created. These sheets include:
+            Students - when you click on here you can view students who have already attended which class, you can also add new students.
+            Reg Class - This page will show you which instructor is teaching which class, and for which class group.
+            Reg Entry - Will show which student is registered and at what time and dae the signed in.
+            Instructor - Will show the name of the instructor.
+            Enrollment - Will show the enrolled student name and which class they are enrolled on.
+            Course - Will show which courses are being taken and by who.
+            RegSheet - Will show the instructors name and which class they are teaching.
+            
+    SHOW HOW TO CREATE IN DIFFERENT PAGES.
+        I will now talk about how to create different things in each of the sheets, so it is easier to use and understand how they all link with each other.
+            Students - when you click on here you can view students who have already attended which class, you can also add new students.
+            Reg Class - When you select the reg class page, you will be shown which class instructor is teaching which class. To create this you click on create new reg class, and select the instructor, select which class, then the name of that class is enetered.
+            Reg Entry - To create an entry ont his sheet you click on create new reg entry and you choose which student is being signed in and then click create, as the timestamp is automatically set to the correct time and date.
+            Instructor - Click on new instructor. On here you can add a registration class which the instructor teachers, you can also select the instructor to teach that class.
+            Enrollment - You select which student is enrolled on the system, and then select which class they will be in/attending.
+            Course - On the course sheet, you select "new course" then add the course code, description and name, you can even add a registration class to this course.
+            RegSheet - YOu select new reg sheet, then insert the correct data.
+            
+    TALK ABOUT THE BOOTSTRAP NAMES THAT HAVE BEEN USED.
+        Bootstrap data has been included in this, just to give the programme some test data, so that it can be used from scratch wihtout creating any new data. 
+        So if you go onto a sheet you can select a student name, course name, instructor, and use this to create registration sheets and test data.
