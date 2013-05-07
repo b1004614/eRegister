@@ -2,6 +2,7 @@ package uk.ac.shu.webarch.eregister
 
 /** 
  * This class shows the name and staff id for an instructor, and also tells us how many course an instructor is teaching.
+ * It shows that the constraints name and staff number cannot be null, and that they both have a max size of a certain number.
  */
 
 class Instructor {

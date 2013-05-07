@@ -3,12 +3,12 @@ package uk.ac.shu.webarch.eregister
  
 
 /** The class below shows the properties that are involved in the class (Course_Name, Course_Code and Course_Description). 
- * It then shows how the classes have been set. For example the course_code has a max size of 20 characters.
+ * It then shows what classes have been used for many to many situations for example RegClass, and then shows how the table will be set out.
  */
 
 class Course {
 
-    String courseName
+    String courseName    
     String courseCode
     String courseDescription
 
