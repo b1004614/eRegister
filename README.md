@@ -43,7 +43,25 @@ How to build?
     Now type "grails run-app" and click "n" You will now be able to view the grails homepage for your application.
     Back in your terminal type cd /grails pp/view index.gsp and get rid of everything in there, then git commit and push this.
     
+    Now its time to set up the database for all the details for classes and students etc. Firstly type in the terminal window mysql -uroot -ppassword and then enter. This will log you on to mysql.
+    Then type "Create database eRegister default chase utf8 default collate uft8_bin" you should get a response saying query okay.
+    Now type in "grant all on eRegister.* to 'webarc'@'localhost' identify by'webarch';
+    Then back in another terminal window you want to copy and paste from the sql powerpoint the details that are needed to be put in. This information goes in grails-app,conf,spring,datasource.groovy. You need to type in gedit firstly.
     
+    Now we need to create the domain classes, to do this go into the terminal window and type "grails create-domain-class uk.shu.ac.webarch.eRegister.student which is where the student class will be saved in. You then need to create a domain class for each of the other classes on the business model.
+    Now do a git status to see what has been updated, then type git add grails-app/domain/test/ then a git commit and push.
+    If you type into my sql now, "show tables;" no results will show which is a good thing.
+    For each of the domain classes, go onto gedit, and then for each class type in the suitable names for each table name and use the many to many and one to many to link each together.
+    This will be a good commit point to say how you have created new domain classes and linked them with one another.
+    Then git push.
+    
+    After you have created the domain classes and linked them, we then need to create controllers then scaffolds for these.
+    Firstly type "grails create-controller [package] controller" This creates the new controller
+     for example you could use "grails create-controller student". This needs to be done for each domain class.
+    You can then git commit and push as you can say that you have created controllers for each class.
+    
+    Now to create the scaffolds which is pretty simple, all you need to do is say "grails generate-all ,,domain-classs-name>> this will create the scaffold for this class. Now complete this for the other classes.
+    Git commit and git push here also.
     
     
     
