@@ -27,7 +27,7 @@ HOW TO BUILD?
     Do the same to create a release branch.
     Once you have created the release branch type "git checkout develop" which changes you back onto the develop branch.
     Now type "git status", which shows what you have done to your project so far.
-    Type "git commit -a 0m "and what ever you have done today", as it is your first commit you will be asked to change a few details. Highlight both "git config" and fill out the section where it asks about username and email. Then press enter.
+    Type "git commit -a -m "and what ever you have done today", as it is your first commit you will be asked to change a few details. Highlight both "git config" and fill out the section where it asks about username and email. Then press enter.
     Now "git push" type in your username and password, this will then push all your work upto github.
     Run "git branch" this will show what branches you have created so far.
     Then type "git merge develop" this will merge the release branch into the develop branch.
@@ -59,6 +59,15 @@ HOW TO BUILD?
     
     Now to create the scaffolds which is pretty simple, all you need to do is say "grails generate-all ,,domain-classs-name>> this will create the scaffold for this class. Now complete this for the other classes.
     Git commit and git push here also.
+    
+    Now to create the bootstrap. Firstly you have to go into gedit on the terminal, and go into conf then into bootstrap.groovy.
+    From hereyou insert the data in the correct way, making sure that what every values you are entering are the correct titles as the table you are creating them for. For example if you are creating a new student, make sure you only enter the student name and id, as that is all that needs to be inserted in that class domain.
+    Then type println
+    Now grails run-app and let it load, if the bootstrap is successful it will show on your termianl window saying bootstrap complete.
+    When you go onto your application, click on student, and then your test data should be showing up, this will also show on there at the startup everytime you run grails.
+    You can now do test data for each of the domain classes.
+    
+    Now once you have created this, you should be able to make data for each class. I managed to get the timestamp to work, but unfortunately this is as far as i could get with the assignment.
     
     
     
