@@ -4,7 +4,8 @@ eRegister
 An electronic attendance register
 
 HOW TO CLONE?
-    Research on google
+    git clone git@github.com:b1004614/eRegister.git
+    This is the command line used to clone the project so that other people can view and use the application.
 
 HOW TO BUILD?  
 
