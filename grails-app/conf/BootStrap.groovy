@@ -1,5 +1,7 @@
 import uk.ac.shu.webarch.eregister.*;
 
+/**The bootstrap shows what test data i have created when the grails application runs.**/
+
 class BootStrap {
 
     def init = { servletContext ->
